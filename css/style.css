@@ -12,6 +12,7 @@ body{
     
 }
 
+
 @media (min-width: 768px) {
     .container{
         /* width: 750px;*/
@@ -41,6 +42,19 @@ body{
     color:rgb(214, 214, 214);
 }
 
+@media (max-width: 500px) {
+    .container{
+        /* width: 750px;*/
+        flex-direction: column;
+    }
+    .nav-bar{
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    
+}
+
 .nav-bar h2{
     text-align: center;
     letter-spacing: -1px;
@@ -52,15 +66,19 @@ body{
     font-size: 22px;
     font-family:  Georgia, 'Times New Roman', Times, serif;
 }
+.nav-bar h2:hover {
+    color: rgb(141, 162, 230);
+}
 
 .nav-bar .nav-item{
     padding: 15px;
     cursor: pointer;
 }
-.nav-bar .cat{
+.cat-page .cat{
     background-color: rgb(100, 97, 97);
     color: rgb(255, 255, 255);
 }
+
 
 .nav-bar .dash:hover{
     background-color: rgb(223, 111, 19);
@@ -108,10 +126,6 @@ body{
     background-color: rgb(117, 165, 117);
 }
         /*Categories table*/
-
-.cat-table{
-    
-}
 
 .cat-table .table-head{
     background-color: rgb(49, 173, 214);
@@ -174,6 +188,8 @@ table .delete:hover{
     border: 1px solid #aaa;
     padding-bottom: 20px;
     background-color: #eee;
+    overflow-x:auto;
+
 }
 .page-num{
     text-align: center;
@@ -214,4 +230,27 @@ table .delete:hover{
 .page-control .last:hover{
     background-color: #aaa;
     text-decoration: underline;
+}
+
+
+            /*Product Page*/
+
+
+.pro-page .pro{
+    background-color: rgb(100, 97, 97);
+    color: rgb(255, 255, 255);
+}
+
+@media (max-width: 730px) {
+    .prod-container{
+        /* width: 750px;*/
+        flex-direction: column;
+    }
+    .prod-container .nav-bar{
+        margin-bottom: 70px;
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    
 }
