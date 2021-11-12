@@ -74,7 +74,9 @@ body{
     padding: 15px;
     cursor: pointer;
 }
-.cat-page .cat{
+.cat-page .cat,
+.dash-page .dash,
+.pro-page .pro {
     background-color: rgb(100, 97, 97);
     color: rgb(255, 255, 255);
 }
@@ -107,13 +109,13 @@ body{
 
                 /*Main-content: Categories*/
 
-.main-content{
+.main{
     padding-left: 15px;
     padding-right: 15px;
     width: 100%;
 }
 
-.main-content .insrt-bttn{
+.main .insrt-bttn{
     background-color: rgb(39, 100, 39);
     padding: 8px;
     border-radius: 3px;
@@ -122,12 +124,12 @@ body{
     cursor: pointer;
 }
 
-.main-content .insrt-bttn:hover{
+.main .insrt-bttn:hover{
     background-color: rgb(117, 165, 117);
 }
         /*Categories table*/
 
-.cat-table .table-head{
+.section-head{
     background-color: rgb(49, 173, 214);
     padding: 10px;
     border-radius: 3px;
@@ -189,6 +191,7 @@ table .delete:hover{
     padding-bottom: 20px;
     background-color: #eee;
     overflow-x:auto;
+    border-radius: 5px;
 
 }
 .page-num{
@@ -236,14 +239,8 @@ table .delete:hover{
             /*Product Page*/
 
 
-.pro-page .pro{
-    background-color: rgb(100, 97, 97);
-    color: rgb(255, 255, 255);
-}
-
 @media (max-width: 730px) {
     .prod-container{
-        /* width: 750px;*/
         flex-direction: column;
     }
     .prod-container .nav-bar{
@@ -312,4 +309,13 @@ table .delete:hover{
     border-radius: 5px; 
     border: 0.5px solid #aaa;
     padding: 5px;
+}
+
+
+
+                /*Dashboard*/
+.dashboad .border p{
+    padding: 5px 35px 0px 35px;
+    text-align: center;
+    line-height: 25px;
 }
