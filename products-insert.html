@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Dashboard</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <nav class="nav-bar cat-page">
+            <h2>OnLine<span class="spcial-weight">Store</span></h2>
+            <p class="nav-item dash">Dashboard</p>
+            <p class="nav-item cat">Categories</p>
+            <p class="nav-item pro">Products</p>
+            <p class="logout">LogOut</p>
+        </nav>
+
+        <div class="main-content">
+            <header>
+                <h1>Products Insert</h1>
+                <p>Insert New Products</p>
+            </header>
+
+            <section class="cat-table">
+                <p class="table-head">Data Input</p>
+
+                <div class="border">
+                    <form action="" class="cat-insert pro-insert">
+                        <div class="without-btns">
+                            <label for="name">Name<br><input type="text" id="name"></label>
+                            <br><br>
+                            <label for="type">Choose the Type: <select name="type" id="type">
+                                    <option value="normal">normal</option>
+                                    <option value="discount">discount</option>
+                                </select></label>
+                                <br><br>
+                                <label for="price">Price <br> <input type="number" id="price"></label>
+                                <br><br>
+                                <label for="image">Image <br><input type="file" id="image"></label>
+                            <br><br>
+                            <label for="id">Category ID: <select name="id" id="id">
+                                <option value="Clothes">Clothes</option>
+                                <option value="Electronic">Electronic</option>
+                            </select>
+                            </label>
+                            <br><br>
+                            <label for="discount">Discount <br> <input type="number" id="discount"></label>
+                            <br><br>
+                        </div>
+                        <input type="button" value="Save" class="save-btn">
+                        <input type="button" value="Cancel" class="delete-btn">
+                    </form>
+                </div>
+            </section>
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -300,3 +300,16 @@ table .delete:hover{
 .cat-insert .delete-btn:hover{
     opacity: 0.9;
 }
+
+
+
+                /*Product Insert*/
+
+
+.border .pro-insert .without-btns input,
+.border .pro-insert .without-btns  select{
+    width: 100%; 
+    border-radius: 5px; 
+    border: 0.5px solid #aaa;
+    padding: 5px;
+}
