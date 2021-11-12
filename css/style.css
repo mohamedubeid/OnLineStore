@@ -42,7 +42,7 @@ body{
     color:rgb(214, 214, 214);
 }
 
-@media (max-width: 500px) {
+@media (max-width: 570px) {
     .container{
         /* width: 750px;*/
         flex-direction: column;
@@ -253,4 +253,50 @@ table .delete:hover{
         text-align: center;
     }
     
+}
+
+            /*Categories insert*/
+
+.border .cat-insert{
+    margin: 40px auto 40px auto;
+    width: 40%;
+    min-width: 300px;
+    padding: 20px 15px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+}
+
+.border .cat-insert [type=text] {
+    width: 100%; 
+    border-radius: 5px; 
+    border: 0.5px solid #aaa;
+    padding: 5px;
+}
+.border .cat-insert textarea{
+    border-radius: 5px; 
+    border: 0.5px solid #aaa;
+    width: 100%;
+    padding: 5px;
+    height: 70px;
+}
+
+.cat-insert .save-btn{
+    padding: 8px;
+    color: #fff;
+    background-color: rgb(39, 100, 39);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+.cat-insert .delete-btn{
+    padding: 8px;
+    color: #fff;
+    background-color: rgb(185, 49, 49);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+.cat-insert .save-btn:hover,
+.cat-insert .delete-btn:hover{
+    opacity: 0.9;
 }
